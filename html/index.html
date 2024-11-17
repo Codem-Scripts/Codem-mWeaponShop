@@ -1,0 +1,289 @@
+<html>
+	<head>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	</head>
+	<body>
+        <div class="container" id="container" >
+            <div class="container-logo">
+                <div class="money-logo">
+
+                </div>
+                <p class="player-cashamount">150000000$</p>
+            </div>
+            <div class="top-line"></div>
+            <div class="weapon-main-desc-container">
+                <div class="weapon-type-container">
+                    <div class="weapon-type-line"></div>
+                    <div class="weapon-type">ASSAULT RIFFLES</div>
+                </div>
+                <div class="weapon-name">
+                    Carbine Riffle
+                </div>
+                <div class="weapon-name-main">
+                    Carbine Riffle
+                </div>
+                <div class="weapon-information">
+                    This weapon belongs to the Assault Rifles weapon class in the game. The Carbine Rifle has featured in multiple Grand Theft Auto titles under different names. This is a fully-automatic weapon that can be fitted with a variety of attachments. There is also a setup mission in GTA V by the name Carbine Rifles in which the player has to hijack a tactical van full of weapons including Carbine Rifles.
+                </div>
+                <div class="weapon-status">
+                    <div class="weapon-status-index" >
+                        <div class="weapon-status-index-status-name" >
+                            DAMAGE
+                        </div>
+                        <div class="weapon-status-index-status-value">
+                            <div class="statusset" id="damage"></div>
+                        </div>
+                        <div class="weapon-status-index-status-value-text" id="damage-value">
+                            0/100
+                        </div>
+                    </div>
+                    <div class="weapon-status-index" >
+                        <div class="weapon-status-index-status-name" >
+                            RATE OF FIRE
+                        </div>
+                        <div class="weapon-status-index-status-value">
+                            <div class="statusset" id="rateoffire"></div>
+                        </div>
+                        <div class="weapon-status-index-status-value-text" id="rateoffire-value">
+                            0/100
+                        </div>
+                    </div>
+                    <div class="weapon-status-index" >
+                        <div class="weapon-status-index-status-name" >
+                            ACCURACY
+                        </div>
+                        <div class="weapon-status-index-status-value">
+                            <div class="statusset" id="accuracy"></div>
+                        </div>
+                        <div class="weapon-status-index-status-value-text" id="accuracy-value">
+                            0/100
+                        </div>
+                    </div>
+                    <div class="weapon-status-index" >
+                        <div class="weapon-status-index-status-name" >
+                            RANGE
+                        </div>
+                        <div class="weapon-status-index-status-value">
+                            <div class="statusset" id="range"></div>
+                        </div>
+                        <div class="weapon-status-index-status-value-text" id="range-value">
+                            0/100
+                        </div>
+                    </div>
+                    <div class="weapon-status-index">
+                        <div class="weapon-status-index-status-name" >
+                            MAX AMMO
+                        </div>
+                        <div class="weapon-status-index-status-value">
+                            <div class="statusset" id="maxammo"></div>
+                        </div>
+                        <div class="weapon-status-index-status-value-text" id="maxammo-value">
+                            0/100
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="part-container-main">
+                <div class="part-container">
+                    <div class="part-container-line top"></div>
+                    <div class="parts-index-selected-container" style="width: 100%; height: 90%; margin-top: 10%;">
+
+                    </div>
+                    <p class="parts-list-empty-message">No part has been added.</p>
+                    <div class="part-container-line bottom"></div>
+                </div>
+                <div class="weapon-buttons">
+                    <div class="customize-back-weaponshop-button">
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+                    <div class="customize-weapon-button">
+                        CUSTOMIZE
+                        <div class="customize-weapon-button-icon"></div>
+                    </div>
+                    <div class="weapon-cost">
+                        12,600 $
+                    </div>
+                    <div class="weapon-buybutton">
+                        B U Y
+                    </div>
+                </div>
+  
+            </div>
+            <div class="weapon-contents-container">
+                <div class="weapon-types-container"></div>
+                    <div class="weaponscontainer">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper" id="test2"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+            </div>
+            <div class="weapon-customize-rectangles-index-container-main">
+                <div class="weapon-ammo-container">
+                    <p class="ammo-1">30</p>
+                    <p class="ammo-2">90</p>
+                    <div class="ammo-background"></div>
+                </div>
+                <div class="weapon-customize-rectangles-index-container" id="muzzle">
+                    <div class="weapon-customize-rectangles-index" id="muzzle">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="weapon-customize-rectangles-index-texts">
+                        <p class="weapon-customize-rectangles-index-attach-name">Muzzle</p>
+                        <p class="weapon-customize-rectangles-index-attach-name-index">-</p>
+                    </div>
+                </div>
+                <div class="weapon-customize-rectangles-index-container" id="grip">
+                    <div class="weapon-customize-rectangles-index" id="grip">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="weapon-customize-rectangles-index-texts">
+                        <p class="weapon-customize-rectangles-index-attach-name">Grip</p>
+                        <p class="weapon-customize-rectangles-index-attach-name-index">-</p>
+                    </div>
+        
+                </div>
+                <div class="weapon-customize-rectangles-index-container" id="magazine">
+                    <div class="weapon-customize-rectangles-index" id="magazine">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="weapon-customize-rectangles-index-texts">
+                        <p class="weapon-customize-rectangles-index-attach-name">Magazine</p>
+                        <p class="weapon-customize-rectangles-index-attach-name-index">-</p>
+                    </div>
+                </div>
+                <div class="weapon-customize-rectangles-index-container" id="scope">
+                    <div class="weapon-customize-rectangles-index"id="scope" >
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="weapon-customize-rectangles-index-texts">
+                        <p class="weapon-customize-rectangles-index-attach-name">Scope</p>
+                        <p class="weapon-customize-rectangles-index-attach-name-index">-</p>
+                    </div>
+                </div>
+                <div class="weapon-customize-rectangles-index-container" id="barrel">
+                    <div class="weapon-customize-rectangles-index" id="barrel">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="weapon-customize-rectangles-index-texts">
+                        <p class="weapon-customize-rectangles-index-attach-name">Barrel</p>
+                        <p class="weapon-customize-rectangles-index-attach-name-index">-</p>
+                    </div>
+                </div>
+                <div class="weapon-customize-rectangles-index-container" id="extra">
+                    <div class="weapon-customize-rectangles-index" id="extra">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="weapon-customize-rectangles-index-texts">
+                        <p class="weapon-customize-rectangles-index-attach-name">Extra</p>
+                        <p class="weapon-customize-rectangles-index-attach-name-index">-</p>
+                    </div>
+                </div>
+            </div>
+            <div class="weapon-tints-gobackbutton">
+                <div class="weapon-tints-gobackbutton-container">
+                    <i class="fas fa-chevron-left"></i>
+                    GO BACK
+                </div>
+            </div>
+            <div class="weapon-tints-container">
+                <div class="swiper mySwiper2" style="align-items: flex-start;">
+                    <div class="swiper-wrapper" id="test">
+                        <div class="swiper-slide" id="secswiper" value="skin">
+                            <div class="weapon-tints-tint-index">Weapon Skins</div>
+                            <div class="bottom-line"></div>
+                        </div>
+                        <div class="swiper-slide" id="secswiper" value="tints" style="background: url(images/weapon_tints.png); background-repeat: no-repeat; background-size: cover;">
+                            <div class="weapon-tints-tint-index">Tints</div>
+                            <div class="bottom-line"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="weapon-skins-and-tints-index-container" style="display: none;">
+                    <!-- <div class="weapon-skins-and-tints-index">
+                        <p class="weapon-skins-and-tints-index-label">
+                            DEFAULT SKIN
+                        </p>
+                        <p class="weapon-skins-and-tints-index-price">
+                            1500$
+                        </p>
+                    </div>
+                    <div class="weapon-skins-and-tints-index">
+                        <p class="weapon-skins-and-tints-index-label">
+                            DEFAULT SKIN
+                        </p>
+                        <p class="weapon-skins-and-tints-index-price">
+                            1500$
+                        </p>
+                    </div>
+                    <div class="weapon-skins-and-tints-index">
+                        <p class="weapon-skins-and-tints-index-label">
+                            DEFAULT SKIN
+                        </p>
+                        <p class="weapon-skins-and-tints-index-price">
+                            1500$
+                        </p>
+                    </div>
+                    <div class="weapon-skins-and-tints-index">
+                        <p class="weapon-skins-and-tints-index-label">
+                            DEFAULT SKIN
+                        </p>
+                        <p class="weapon-skins-and-tints-index-price">
+                            1500$
+                        </p>
+                    </div>
+                    <div class="weapon-skins-and-tints-index">
+                        <p class="weapon-skins-and-tints-index-label">
+                            DEFAULT SKIN
+                        </p>
+                        <p class="weapon-skins-and-tints-index-price">
+                            1500$
+                        </p>
+                    </div>
+                    <div class="weapon-skins-and-tints-index">
+                        <p class="weapon-skins-and-tints-index-label">
+                            DEFAULT SKIN
+                        </p>
+                        <p class="weapon-skins-and-tints-index-price">
+                            1500$
+                        </p>
+                    </div> -->
+
+                </div>
+            </div>       
+            
+        </div>     
+            <script src="./script.js" type="text/javascript"></script>
+			<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.min.js" type="text/javascript"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	</body>      
+    <div class="weapon-attachments-type-container">
+        <div class="weapon-attachments-type">
+
+        </div>
+        <div class="weapon-attachments-selected-type">
+            <div class="weapon-attachments-selected-type-container">
+                <div class="weapon-attachment-selected">
+                    <i class="fas fa-plus"></i>
+                </div>
+                <div class="weapon-customize-rectangles-index-texts">
+                    <p class="weapon-customize-rectangles-index-attach-name" id="attachment-name">-</p>
+                    <p class="weapon-customize-rectangles-index-attach-name-index" id="attachment-index">-</p>
+                    <p class="weapon-customize-rectangles-index-attach-price" id="attachment-price">-</p>
+                </div>
+            </div>
+        </div>
+    
+</html>
+
+
